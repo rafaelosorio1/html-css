@@ -11,6 +11,7 @@
         }
 
         table {
+            position: relative;
             width: 400px;
             border-collapse: collapse;
         }
@@ -22,11 +23,21 @@
             background-color: rgb(185, 185, 185);
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
         td, th {
             border: 1px solid black;
         }
 
         thead, tfoot {
+            background-color: grey;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
             background-color: grey;
         }
 
