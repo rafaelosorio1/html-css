@@ -6,19 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela 4</title>
     <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
-            width: 300px;
+            width: 500px;
             padding: 10px;
             border-collapse: collapse;
         }
 
+        section{
+            width: 498px;
+            margin-top: 10px;
+            background-color: lightgrey;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
+            border-bottom: 0px;
+            
+        }
+
+        section div {
+            display: inline-block;
+            width: 162px;
+            border: 1px solid black;
+            border-top: 0px;
+            margin-left: 183px;
+            
+        }
+
         thead {
-            width: 300px;
-            height: 56px;
+            width: 300px; 
         }
 
         th {
             background-color: lightgrey;
+            border: 1px solid black;
+            border-top: 0px;
         }
 
         .media {
@@ -30,20 +61,29 @@
             text-align: center;
         }
 
-        td, th {
+        .maior {
+            height: 76px;
+        }
+
+        td {
             border: 1px solid black;
         }
+
     </style>
 </head>
 <body>
+    <section>
+        <div>Notas</div>
+    </section>
+
     <table>
         <thead>
-            <th>Área</th>
-            <th>Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th>Média</th>
+            <th class="maior">Área</th>
+            <th class="maior">Disciplinas</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th class="maior">Média</th>
         </thead>
-
         <tbody>
             <tr>
                 <th rowspan="4">Exatas</th>
